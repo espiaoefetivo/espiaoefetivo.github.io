@@ -1,0 +1,111 @@
+body {
+    margin: auto;
+    background-image: url(./Images/bg.jpg);
+    background-repeat: repeat-y;
+    width: 90%;
+}
+
+header {
+    background-color: rgba(0, 255, 0, 0.3);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.logoDiv {
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    max-width: fit-content;
+}
+
+.atencao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    width: fit-content;
+}
+
+b {
+    margin: 10px 0 10px 0;
+}
+
+b:hover, textarea:hover {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    width: 60%;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: green;
+    width: 30%;
+    align-self: flex-start;
+    border-radius: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+
+footer label {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}

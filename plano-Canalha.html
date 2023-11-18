@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./canalha.css">
+    <link rel="shortcut icon" href="./Images/hand-outline-gesture-4_113968.ico" type="image/x-icon">
+    <title>Plano Canalha</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerdiv">
+            <div class="logoDiv">
+                <img src="./Images/olho_espiao-removebg-preview.png" alt="logo do site" style="max-width: 300px;">
+                <h3 style="font-family: sevenMonkey;font-size: 40px;
+                margin: auto;">Modo Anonimo</h3>
+            </div>
+        </div>
+    </header>
+
+    <h1>Contratacao</h1>
+    <div class="atencao">
+        <h2>Siga As Orientacoes A Seguir</h2>
+        <div>
+            <ol>
+                <li>Realize o Pagamento Pelo Qr Code Abaixo ou pelo Pix Copia e cola.</li>
+                <img src="./Images/qrCodes/199.jpeg" alt="qrcode">
+                <b onclick="copiarTexto()">Clique aqui ou no codigo pix para copiar automaticamente</b>
+                <textarea onclick="copiarTexto()" name="pix" id="pix" cols="30" rows="10"
+                    readonly>00020126580014br.gov.bcb.pix01363277c837-70a0-4cd1-8d43-19e82f3b87a85204000053039865406199.905802BR5924reginaldo mourao tavares6007Barueri62290525BITZ2022121412132503211386304E9B8</textarea>
+                <li>Apos Realizar o Pagamento Nos Envie pelo Formulario a Seguir os Dados Solicitados.</li>
+                <form action="submit">
+
+                    <label for="Nome">Nome Do Pagador Pix</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="alvo">Numero Alvo Com DDD</label>
+                    <input type="tel" name="alvo" id="alvo">
+                    <label for="email">Informe Um Email Seu</label>
+                    <input type="email" name="email" id="email">
+                    <input onclick="DadosEnviados()" class="button" type="button" value="Enviar Dados">
+                </form>
+                <li>Qualquer Duvida Sobre o Uso Da Plataforma ou Outras Questoes,
+                    Entre Em Contato.
+                </li>
+                <div class="divButton"> <a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5555999577650">
+                    <button type="button" class="button"> Clicando Aqui </button></a>
+            </div>
+                
+            </ol>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="logoDiv" style="padding: 10px;">
+            <label for="logoDiv">Todos os direitos reservados Modo Anonimo - 2022</label>
+        </div>
+    </footer>
+
+    <script>
+        function copiarTexto() {
+            let textoCopiado = document.getElementById("pix");
+            textoCopiado.select();
+            textoCopiado.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Pix Copiado");
+        }
+
+        function DadosEnviados () {
+            alert('Dados Enviados Com Sucesso')
+        }
+    </script>
+
+</body>
+
+</html>

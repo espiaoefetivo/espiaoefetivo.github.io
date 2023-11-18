@@ -1,0 +1,300 @@
+* {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+@font-face {
+    font-family: sevenMonkey;
+    src: url(./Images/seven-monkey-fury-bb.regular.ttf);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logosRedes {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.headerdiv {
+
+    display: flex;
+    flex-direction: column
+}
+
+header {
+    background-color: rgb(0 0 0 / 41%);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: fit-content;
+}
+
+header ul {
+    float: none;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h2 {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: black;
+    padding: 2px;
+    text-align: center;
+}
+
+body {
+    margin: auto;
+    max-width: min-content;
+    background-image: url(./Images/bg.jpg);
+    background-repeat: repeat-y;
+}
+
+ul {
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    margin: 5px;
+    padding: 0;
+}
+
+.ulFooter {
+    display: flex;
+    flex-direction: column;
+    padding: inherit;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+    border-bottom: 1px white solid;
+}
+
+.loginButton {
+    background-color: black;
+    color: orangered;
+}
+.loginButton a {
+    color: orangered;
+}
+
+main {
+    padding: 10px;
+}
+
+.mainImgs {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.mainImgs div {
+
+    width: 220px;
+}
+
+.mainImgs img {
+    width: 150px;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+
+.divButton {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 10px auto;
+}
+
+.divButton:hover {
+    cursor: pointer;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 32px;
+
+    animation: myAnim 2s ease 0s infinite normal forwards;
+
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.div7dias {
+    display: flex;
+    background-color: rgba(17, 0, 255, 0.711);
+}
+
+.texto7dias {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comofuncionadiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#contatodiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0 0 0 / 30%);
+}
+
+#depoimentos img {
+    width: 210px;
+    margin: 5px;
+}
+
+.depoImgs {
+    display: flex;
+}
+
+#acessoatudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ANIMACOES */
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
+
+
+/* Responsividade Mobile */
+
+@media screen and (max-width: 750px) {
+
+    .logoDiv {
+      
+        border: 5px solid white;
+    }
+
+    video {
+        width: 400px;
+    }
+
+    .logoDiv img {
+        width: 100%;
+    }
+
+    .logoDiv h3 {
+        text-align: center;
+    }
+
+    .mainImgs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mainImgs div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        max-width: none;
+        margin: 10px;
+    }
+
+    .div7dias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containercomofunciona {
+        flex-direction: column;
+    }
+
+    .depoImgs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divcomo {
+        flex-direction: column;
+    }
+
+    #acessoatudo img {
+        width: 100%;
+    }
+
+}

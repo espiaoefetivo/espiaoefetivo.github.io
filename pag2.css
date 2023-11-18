@@ -1,0 +1,179 @@
+body {
+    margin: auto;
+    background-image: url(./Images/bg.jpg);
+    background-repeat: repeat-y;
+    width: 90%;
+}
+
+header {
+    background-color: rgba(0, 255, 0, 0.3);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.logoDiv {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.planos {
+    background-color: rgb(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.planos h3 {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-image: url('./Images/svg/reshot-icon-checkmark-GVRAE73C9Z.svg');
+}
+
+.offPlan {
+    list-style-image: url('./Images/svg/reshot-icon-x-XL3PMTW87F-17ba4.svg');
+    margin: 0;
+}
+
+.plano1 {
+    background-color: rgba(13, 255, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.plano2 {
+    background-color: rgba(13, 255, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.plano3 {
+    background-color: rgba(13, 255, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+b {
+    text-decoration: line-through;
+    font-size: small;
+}
+
+.hightPrice {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.divButton {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 10px auto;
+}
+
+.divButton:hover {
+    cursor: pointer;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 32px;
+
+    animation: myAnim 2s ease 0s infinite normal forwards;
+
+}
+
+/* ANIMACOES */
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.precoMargin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+
+label {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width:500px) {
+
+    .planos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plano1, .plano2, .plano3 {
+        margin: 10px;
+    }
+
+    ul {
+        padding-left: 40%;
+    }
+}

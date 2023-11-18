@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./login.css">
+    <script src="./login.js" sync></script>
+    <title>Login Espiao </title>
+</head>
+
+<body>
+
+    <div class="errorUser">
+        <div>
+            <h1>Usuario ou Senha Invalidos</h1>
+            <h2>ou</h2>
+            <h1>Voce Nao Tem Monitoramento Ativo</h1>
+            <h2>Para Contratar seu Plano Entre em Contato Conosco</h2>
+        </div>
+
+        <div class="alertButtons">
+            <button><a href="https://api.whatsapp.com/send?phone=5555999577650" target="_blank" rel="noopener noreferrer">Entrar Em Contato</a></button>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <div class="login-box">
+        <div class="logo-login">
+            <img src="./Images/logo-fox.jpg" alt="foto slogan">
+        </div>
+        <h2 >Espião - System Fox</h2>
+        <form action="submit">
+            <div class="user-box">
+                <input id="usuario" onkeyup="userempty.innerHTML = ''" type="text" name="name" class="user" required="Insira Seu Usuario" autocomplete="off">
+                <label>Usuario</label>
+                <div class="userempty" id="userempty" style="color: red;"></div>
+            </div>
+            <div class="user-box">
+                <div class="password-container">
+                <input type="text" class="password" id="password" onkeydown="passwordempty.innerHTML = '' " name="password"  required="" autocomplete="off">
+                <i class="fa-solid fa-eye" id="eye" onclick="Click()"></i>
+                <label>Senha</label> 
+                </div>
+                <div class="passwordempty" id="passwordempty" style="color: red;"></div>
+            </div>
+            <a class="submit" type="submit" onclick="Logar(event)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Entrar
+            </a>
+        </form>
+    </div>
+
+       <script>
+        // Função para preencher os campos do formulário com valores da URL
+        function preencherCampos() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const usuario = urlParams.get('usuario');
+            const senha = urlParams.get('senha');
+
+            if (usuario && senha) {
+                document.getElementById('usuario').value = usuario;
+                document.getElementById('password').value = senha;
+            }
+        }
+
+        // Chame a função ao carregar a página
+        window.onload = preencherCampos;
+    </script>
+    
+</body>
+
+</html>

@@ -41,7 +41,7 @@ function Logar(event) {
         window.location.href = "./acesso-ao-monitoramento.html"
     }
 
-    fetch("https://api.airtable.com/v0/app1frQUZL4Rfs42f/tblC6HTAw0RaJKYMS/Accounts", {
+    fetch("https://api.airtable.com/v0/app1frQUZL4Rfs42f/tblC6HTAw0RaJKYMS", {
 
         headers: {
             Authorization: 'Bearer patUxIb2CoRWbBzdv.45e9c7d3de7fa2d3cd61402cbb6c337bf3eb8196deffbae4c681bcf128cd6b72',
